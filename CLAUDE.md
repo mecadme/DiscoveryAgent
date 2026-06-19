@@ -1,6 +1,6 @@
 # Discovery Agent
 
-Agente de OpenCode que convierte **conocimiento de negocio crudo** en
+Agente de Claude Code que convierte **conocimiento de negocio crudo** en
 **artefactos de producto** (personas, stakeholders, requisitos, user stories,
 MVP Canvas) e **hipótesis con experimentos** para validarlos. Es el producto de
 la Unidad 1 de *Ingeniería de Software* (Maestría en Software, UPS).
@@ -19,7 +19,7 @@ código de la aplicación, sino entender el problema antes de construir.
 - `discoveries/citasalud/` — discovery de **ejemplo**, completo (sirve de
   referencia y de plan B para la demo). No lo uses como fuente de otro discovery.
 - `discoveries/_template/` — discovery en blanco para copiar al empezar uno nuevo.
-- `.opencode/` — el agente en sí (genérico): skill `discovery`, comandos y los hooks.
+- `.claude/` — el agente en sí (genérico): skill `discovery`, comandos y los hooks.
 
 ## Reglas de trabajo (no negociables)
 
@@ -44,7 +44,7 @@ código de la aplicación, sino entender el problema antes de construir.
 3. `/discovery:experiments <discovery>` — convierte los supuestos riesgosos del
    MVP en hipótesis falsables y genera `experiment-board.json` y `hypotheses.md`.
 
-Ejemplo: `/discovery:analyze discoveries/<nombre del proyecto>`.
+Ejemplo: `/discovery:analyze discoveries/citasalud`.
 
 ## Los gates (reglas duras, por discovery)
 
