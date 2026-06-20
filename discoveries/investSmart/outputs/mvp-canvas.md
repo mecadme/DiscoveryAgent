@@ -14,7 +14,7 @@ flowchart LR
 
   O --> C --> I
 ```
-![img_1.png](img_1.png)
+![img_1.png](media/img_1.png)
 ---
 
 ## Canvas
