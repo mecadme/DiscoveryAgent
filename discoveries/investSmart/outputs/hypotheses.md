@@ -26,7 +26,7 @@ flowchart TD
   H1 -->|"≥ 75 % Likert ≥ 4/5"| K1["Construir motor de\nrecomendaciones explicadas"]:::ok
   H1 -->|"< 75 %"| V1["Pivotar: descubrimiento\nguiado, no recomendación\nautónoma"]:::no
 ```
-![img_2.png](media/img_2.png)
+
 ---
 
 ### [H-02] Comprensibilidad de la explicación en lenguaje simple — riesgo: alto
@@ -49,7 +49,7 @@ flowchart TD
   H2 -->|"≥ 70 % entienden sin ayuda"| K2["Adoptar modelo de\nexplicación como estándar"]:::ok
   H2 -->|"< 70 %"| V2["Iterar formato: íconos,\nanalogías, escenarios visuales\n→ repetir test"]:::no
 ```
-![img_3.png](media/img_3.png)
+
 ---
 
 ### [H-03] Validez del cuestionario de perfil de riesgo — riesgo: medio
@@ -72,7 +72,7 @@ flowchart TD
   H3 -->|"≥ 70 % coincidencia"| K3["Usar cuestionario\ncomo mecanismo oficial"]:::ok
   H3 -->|"< 70 %"| V3["Rediseñar con analista\nfinanciero → repetir\nvalidación"]:::no
 ```
-![img_4.png](media/img_4.png)
+
 ---
 
 ### [H-04] Viabilidad de costos de APIs financieras — riesgo: medio
@@ -95,7 +95,7 @@ flowchart TD
   H4 -->|"≥ 1 proveedor ≤ $200/mes\n+ latencia ≤ 3 s"| K4["Seleccionar proveedor\n+ definir arquitectura\nde caché"]:::ok
   H4 -->|"Ningún proveedor cumple"| V4["Modelo híbrido: caché\nagresiva + actualización\ncada 15 min"]:::no
 ```
-![img_5.png](media/img_5.png)
+
 ---
 
 ## Resumen del tablero de experimentos

@@ -71,4 +71,3 @@ flowchart LR
 
 > **Verde** = persona con respaldo de primera mano · **Ámbar** = referenciada (ninguna en este discovery) · **Violeta** = stakeholder
 
-![img.png](media/img.png)
