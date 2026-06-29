@@ -1,0 +1,20 @@
+{
+  "personas": [
+    { "name": "M. (recepcionista)", "role": "recepcionista", "primary": true },
+    { "name": "J. (paciente)", "role": "paciente", "primary": true },
+    { "name": "Dra. S. (médico)", "role": "medico", "primary": true },
+    { "name": "Dueño de la clínica", "role": "dueno", "primary": false }
+  ],
+  "pains": [
+    { "id": "dobles-reservas",          "source": "recepcionista.md", "persona": "M. (recepcionista)" },
+    { "id": "sobrecarga-telefonica",     "source": "recepcionista.md", "persona": "M. (recepcionista)" },
+    { "id": "recordatorios-manuales",   "source": "recepcionista.md", "persona": "M. (recepcionista)" },
+    { "id": "acceso-telefono-limitado", "source": "paciente.md",      "persona": "J. (paciente)" },
+    { "id": "cita-perdida",             "source": "paciente.md",      "persona": "J. (paciente)" },
+    { "id": "sin-recordatorio-confiable", "source": "paciente.md",    "persona": "J. (paciente)" },
+    { "id": "ausentismo",               "source": "doctora.md",       "persona": "Dra. S. (médico)" },
+    { "id": "agenda-no-remota",         "source": "doctora.md",       "persona": "Dra. S. (médico)" },
+    { "id": "falta-info-paciente-nuevo","source": "doctora.md",       "persona": "Dra. S. (médico)" },
+    { "id": "control-disponibilidad",   "source": "doctora.md",       "persona": "Dra. S. (médico)" }
+  ]
+}
