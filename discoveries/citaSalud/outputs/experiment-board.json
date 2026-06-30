@@ -1,0 +1,34 @@
+{
+  "hypotheses": [
+    {
+      "id": "H-01",
+      "risk": "alto",
+      "assumption": "Los pacientes (incluyendo adultos mayores) adoptarán el canal digital para reservar citas en lugar de llamar.",
+      "hypothesis": "Creemos que los pacientes agendarán ≥ 40 % de las nuevas citas vía canal digital si se les ofrece un formulario de reserva simple, porque el principal freno actual es la imposibilidad de llamar en horario laboral, no la falta de disposición digital.",
+      "metric": "Porcentaje de nuevas citas agendadas vía canal digital vs. total de citas agendadas (telefónicas + presenciales + digitales) en el período de piloto.",
+      "threshold": "≥ 40 % de las nuevas citas agendadas online al finalizar la semana 4 del piloto.",
+      "experiment": "Concierge test (2 semanas): la recepcionista comparte con pacientes recurrentes un formulario Google para solicitar cita; ella gestiona la reserva manualmente. Se mide cuántos lo usan vs. cuántos siguen llamando o yendo en persona.",
+      "decision": "Si pasa (≥ 40 % de citas vía form) → canal digital validado; construir la reserva real. Si falla (< 40 %) → entrevistar a los que no usaron el form para identificar la barrera; pivotar hacia asistencia híbrida (bot de WhatsApp guiado) antes de construir el MVP completo."
+    },
+    {
+      "id": "H-02",
+      "risk": "alto",
+      "assumption": "La recepcionista migrará del cuaderno físico + Excel al sistema digital sin resistencia operativa significativa.",
+      "hypothesis": "Creemos que la recepcionista adoptará el sistema si el flujo de registro de una cita es igual o más rápido que el proceso actual, porque su resistencia proviene de la pérdida de velocidad operativa, no del rechazo a la tecnología en sí.",
+      "metric": "Tiempo promedio para registrar una cita con el prototipo del sistema vs. el proceso actual con cuaderno/Excel, medido en sesiones de observación controlada.",
+      "threshold": "El registro con el sistema tarda ≤ 2 minutos por cita y la recepcionista no recurre al cuaderno paralelo después del día 3 de uso.",
+      "experiment": "Prototipo desechable (Figma o papel) + sesión de role-play de 1 hora: la recepcionista registra 5 citas ficticias con think-aloud; se cronometra cada paso y se anotan los puntos de fricción.",
+      "decision": "Si pasa (≤ 2 min/cita sin cuaderno paralelo desde el día 3) → flujo de recepcionista viable; construir con confianza. Si falla (> 2 min o cuaderno paralelo persiste) → identificar los pasos lentos, rediseñar y repetir la sesión antes de iniciar desarrollo."
+    },
+    {
+      "id": "H-03",
+      "risk": "medio",
+      "assumption": "Los recordatorios automáticos por WhatsApp reducirán el ausentismo de 15 % a ≤ 8 %, y el canal es viable para la clínica.",
+      "hypothesis": "Creemos que el ausentismo bajará de 15 % a ≤ 8 % si los pacientes reciben un recordatorio por WhatsApp 24 h antes de su cita, porque el problema declarado es el olvido, no la falta de intención de asistir.",
+      "metric": "Tasa de ausentismo: citas confirmadas que no se presentan / total de citas confirmadas en el período de piloto.",
+      "threshold": "Tasa de ausentismo ≤ 8 % al cabo de 4 semanas de recordatorios activos (línea base declarada: 15 %).",
+      "experiment": "Mago de Oz (4 semanas): la recepcionista envía manualmente mensajes de WhatsApp Business a cada paciente confirmado 24 h antes. Se registra asistencia vs. ausentismo sin integrar la API de WhatsApp.",
+      "decision": "Si pasa (ausentismo ≤ 8 % en las 4 semanas) → efecto del recordatorio validado; invertir en integración de WhatsApp Business API. Si falla (ausentismo > 10 % pese al recordatorio) → investigar causa raíz (transporte, costo de consulta, otro); evaluar canal alternativo (llamada corta) o replantear el supuesto sobre el olvido como causa principal del ausentismo."
+    }
+  ]
+}
